@@ -29,14 +29,16 @@
             <div class="box-menu">
                 <div class="text">
                     <h2>Product Registration</h2>
-                    <form action="addProduct" method="post" enctype="multipart/form-data">
+                    <form action="uploadImages" method="post" enctype="multipart/form-data">
                         <table>
                             <tr>
                                 <td><label for="prID">Product ID - Name</label></td>
                                 <td>
                                     <select name="prID" class="input1">
                                         <c:forEach var="item" items="${medic}">
-                                            <option value="${item.prId}">${item.prId} - ${item.prName}</option>
+                                            <c:if test="${empty item.prImage}">
+                                                <option value="${item.prId}">${item.prId} - ${item.prName}</option>
+                                            </c:if>
                                         </c:forEach>                                    
                                     </select>
                                 </td>

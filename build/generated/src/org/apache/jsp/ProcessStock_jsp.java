@@ -77,10 +77,11 @@ public final class ProcessStock_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <div class=\"box-menu\">\n");
       out.write("                    <h2 class=\"tajuk\">Product</h2>\n");
       out.write("                    <div class=\"stockintf\">\n");
-      out.write("                        <table style=\"border-bottom: 2px black\">\n");
+      out.write("                        <table border=\"1\">\n");
       out.write("                            <tr>\n");
       out.write("                                <th>Product ID</th>\n");
       out.write("                                <th>Product Name</th>\n");
+      out.write("                                <th>Product Image</th>\n");
       out.write("                                <th>Quantity</th>\n");
       out.write("                                <th>Expired Date</th>\n");
       out.write("                                <th>Edit</th>\n");
@@ -141,6 +142,9 @@ public final class ProcessStock_jsp extends org.apache.jasper.runtime.HttpJspBas
           out.write("                                    <td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.prQty}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");
+          out.write("                                    <td><img src=\"data:image/jpeg;base64,");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.PrImageString}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\"></td>\n");
           out.write("                                    <td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.prExpDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");

@@ -28,6 +28,7 @@
                             <tr>
                                 <th>Product ID</th>
                                 <th>Product Name</th>
+                                <th>Product Image</th>
                                 <th>Quantity</th>
                                 <th>Expired Date</th>
                                 <th>Edit</th>
@@ -39,6 +40,7 @@
                                     <td>${listpr.prId}</td>
                                     <td>${listpr.prName}</td>
                                     <td>${listpr.prQty}</td>
+                                    <td><img src="data:image/jpeg;base64,${listpr.prImageString}" class="gambar-display"></td>
                                     <td>${listpr.prExpDate}</td>
                                     <td><a href="EditMedicationRet?prId=${listpr.prId}" class="btnedit">Edit</a></td>
                                     <td><a href="deleteProduct?prId=${listpr.prId}" class="btndel">Delete</a></td>

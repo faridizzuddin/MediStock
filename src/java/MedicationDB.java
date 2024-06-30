@@ -99,6 +99,7 @@ public class MedicationDB {
                 e.setPrName(rs.getString(2));
                 e.setPrQty(rs.getInt(3));
                 e.setPrExpDate(rs.getString(4));
+                e.setPrImage(rs.getBytes(5));
                 list.add(e);
             }
             con.close();
