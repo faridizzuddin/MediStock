@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -51,8 +52,10 @@ public class addProduct extends HttpServlet {
         } else {
             out.println("Sorry!");
         }
-        request.setAttribute("stat", stat);
-        request.getRequestDispatcher("completeAddProduct.jsp").forward(request, response);
+        
+        List<Medication> medic = MedicationDB.getAllMedications();
+        request.setAttribute("medic", medic);
+        request.getRequestDispatcher("addImage.jsp").forward(request, response);
 
         out.close();
     }
