@@ -88,6 +88,10 @@
         <servlet-name>viewAllMedication</servlet-name>
         <servlet-class>viewAllMedication</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>toAddImage</servlet-name>
+        <servlet-class>toAddImage</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>viewMedication</servlet-name>
         <url-pattern>/viewMedication</url-pattern>
@@ -175,6 +179,10 @@
     <servlet-mapping>
         <servlet-name>viewAllMedication</servlet-name>
         <url-pattern>/viewAllMedication</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>toAddImage</servlet-name>
+        <url-pattern>/toAddImage</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

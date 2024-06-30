@@ -82,6 +82,7 @@ public final class ProductRegister_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            <div class=\"box-menu\">\n");
       out.write("                <div class=\"text\">\n");
       out.write("                    <h2>Product Registration</h2>\n");
+      out.write("                    <a href=\"toAddImage\">Add Image</a>\n");
       out.write("                    <form action=\"addProduct\" method=\"post\">\n");
       out.write("                        <table>\n");
       out.write("                            <tr>\n");
@@ -95,7 +96,7 @@ public final class ProductRegister_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                                    </select>\n");
       out.write("                                    <a href=\"AddSupplier.jsp\" class=\"link\">Add supplier</a>\n");
       out.write("                                </td>\n");
-      out.write("                            <p><i style=\"font-size: 18px; color:#921224; font-weight: 550;\">Notes : If you don't see your supplier listed, simply click \"Add Supplier\" to include them.</i></p>\n");
+      out.write("                            <p><i style=\"font-size: 19px; color:#921224;\">Notes : If you don't see your supplier listed, simply click \"Add Supplier\" to include them.</i></p>\n");
       out.write("                            </tr>\n");
       out.write("                            <tr>\n");
       out.write("                                <td>Product Name  </td>\n");

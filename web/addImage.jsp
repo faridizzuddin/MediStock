@@ -32,23 +32,19 @@
                     <form action="addProduct" method="post" enctype="multipart/form-data">
                         <table>
                             <tr>
-                                <td>Product ID - Name</td>
-                                <td>cell</td>
+                                <td><label for="prID">Product ID - Name</label></td>
+                                <td>
+                                    <select name="prID" class="input1">
+                                        <c:forEach var="item" items="${medic}">
+                                            <option value="${item.prId}">${item.prId} - ${item.prName}</option>
+                                        </c:forEach>                                    
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Product Name  </td>
-                                <td><input type="text" name="prName" placeholder="Enter product name" class="input" required></td>
+                                <td><label>Product Image</label></td>
+                                <td><input type="file" name="prImage" required placeholder="Enter product image" class="input1"></td>
                             </tr>
-                            <tr>
-                                <td>Quantity </td>
-                                <td><input type="text" name="quantity" placeholder="Quantity" class="input1" required></td>
-                            </tr>
-                            <tr>
-                                <td>Expired Date </td>
-                                <td><input type="date" name="expiredDate" placeholder="Expired Date" class="input1" required></td>
-                            </tr>
-
-                            <tr>
                         </table>
                         <div class="btn">
                             <button type="submit" class="btnSubmit">Submit</button>
