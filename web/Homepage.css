@@ -1,0 +1,95 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 May 2024, 11:10:46 pm
+    Author     : Fareed Dinn
+*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+@font-face{
+    font-family: helvetica;
+    src:url("font/Helvetica.ttf");
+}
+@font-face{
+    font-family: google;
+    src:url("font/Google.ttf");
+}
+@font-face{
+    font-family: google2;
+    src:url("font/GoogleSans-Regular.ttf");
+}
+@font-face{
+    font-family: google3;
+    src:url("font/GoogleSans-Italic.ttf");
+}
+.content{
+    height:100vh;
+    width:auto;
+    background-image: url("image/meddrug.svg");
+    background-position: center;
+    background-size:cover;
+}
+.in{
+}
+.content .mainTajuk{
+    padding-top:12vh;
+    padding-left: 17vh;
+    font-family: google2;
+    font-size:5.5vw;
+    font-weight: 300;
+}
+.mainTajuk .tajukKecil{
+    font-size : 1.9vw;
+    font-weight:599.9;
+}
+.mainTajuk .tajukKecil1{
+    margin-top:1vh;
+    font-size : 1.5vw;
+}
+.mainTajuk .tajukKecil2{
+    margin-top:3vh;
+    font-family: google3;
+    font-size : 2vw;
+}
+.mainTajuk .tajukKecil3{
+    margin-top:7vh;
+    font-family: google2;
+    font-size : 2.5vw;
+}
+.btnSubmit{
+    margin-top:0;
+}
+.btn{
+    text-align: center;
+}
+.btn a{
+    text-decoration: none;
+    color:black;
+    display:flex;
+    width:6.5vw;
+}
+.btnSubmit{
+    font-size: 1.8vw;
+    background-color:#caf0f8;
+    margin:3vh;
+    margin-left:4.5vh;
+    width:6.5vw;
+    padding:1vw;
+    border-radius:15px;
+    box-shadow: 0px 0px 6px 1px black;
+    border:1px solid black;
+}
+.btnSubmit:hover{
+    color:white;
+    background-color:#0077B6;
+    box-shadow: 0px 0px 10px 1px white;
+}
+.start{
+    display:flex;
+}

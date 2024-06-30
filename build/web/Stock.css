@@ -1,0 +1,93 @@
+/* 
+    Created on : 20 May 2024, 12:25:07 pm
+    Author     : Fareed Dinn
+*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+}
+@font-face{
+    font-family: helvetica;
+    src:url("font/Helvetica.ttf");
+}
+@font-face{
+    font-family: google;
+    src:url("font/Google.ttf");
+}
+.content{
+    display:flex;
+    height:100vh;
+
+}
+
+.side {
+    float:left;
+}
+
+.box-menu{
+    margin:5vw;
+    background-color:#caf0f8;
+    border-radius:15px;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-left:20vw;
+    margin-right:15vw;
+    height:40vh;
+}
+
+.stockintf{
+    margin:3vw;
+    display:flex;
+    justify-content:center;
+}
+
+.fontPr{
+    font-size:1.3vw;
+    margin:15px;
+    margin-left:0;
+    font-weight:650;
+    font-family: google;
+}
+.inpPr{
+    font-size: 1.1vw;
+    margin:15px;
+    margin-right:5px;
+    padding:8px;
+    border-radius:10px;
+}
+.btnPr{
+    font-size:1vw;
+    padding:7px;
+    border-radius:10px;
+    height:40px;
+}
+.btnPr:hover{
+    font-size:1vw;
+    padding:7px;
+    border-radius:10px;
+    height:40px;
+    background-color:grey;
+    color:white;
+}
+.btnPr1{
+    margin:20px;
+    font-size:1vw;
+    padding:7px;
+    border-radius:10px;
+    height:60px;
+    width:90px;
+}
+.btnPr1:hover{
+    margin:20px;
+    font-size:1vw;
+    padding:7px;
+    border-radius:10px;
+    height:60px;
+    width:90px;
+    background-color:grey;
+    color:white;
+}
+td{
+    text-align:center;
+}

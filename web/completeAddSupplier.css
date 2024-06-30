@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 May 2024, 10:58:44 pm
+    Author     : Fareed Dinn
+*/
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+@font-face{
+    font-family: helvetica;
+    src:url("font\\Helvetica.ttf");
+}
+body{
+}
+.content{
+    display:flex;
+    height:100vh;
+}
+.side{
+    float:left;
+}
+.boxProductMenu{
+    margin:13vw;
+    margin-top:7vw;
+    font-size:30px;
+    background-color:#caf0f8;
+    height: clamp(15vh,30vh,30.5vh);
+    width: clamp(5vw,60vw,60.5vw);
+    border-radius:15px;
+    padding:2vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border :black solid 2px;
+    box-shadow: 0px 0px 1px 1px black;
+}

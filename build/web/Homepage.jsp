@@ -1,0 +1,38 @@
+<%-- 
+    Document   : Homepage
+    Created on : 17 May 2024, 11:18:28 pm
+    Author     : Fareed Dinn
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Homepage</title>
+        <link rel='stylesheet' href='Homepage.css'>
+    </head>
+    <body>
+        <jsp:include page="Header.jsp"/>
+        <div class="content" >
+            <div class="mainTajuk">
+                <p class="tajukBesar">
+                    Medi<strong>Stock</strong>
+                </p>
+                <p class="tajukKecil">
+                    Transforming your care
+                </p>
+                <p class="tajukKecil2">"Our family, Taking Care of <strong>Yours</strong>"</p>
+                <p class="tajukKecil1">Leave the headache of medical management<br><strong>earn to us</strong></p>
+                <p class="tajukKecil3">Start<strong> Here!!</strong></p>
+                <div class="btn">
+                    <a href="ProductMenu.jsp"><p class="btnSubmit">Login</p></a>
+                </div>
+            </div>
+            <div class="sign-in">
+                <p></p>
+            </div>
+        </div>
+    </body>
+    <jsp:include page="Footer.jsp"/>
+</html>

@@ -1,0 +1,141 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 May 2024, 12:24:06 pm
+    Author     : Fareed Dinn
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: helvetica;
+    src:url("font/Helvetica.ttf");
+}
+@font-face{
+    font-family: google;
+    src:url("font/Google.ttf");
+}
+@font-face{
+    font-family: google2;
+    src:url("font/GoogleSans-Regular.ttf");
+}
+@font-face{
+    font-family: google3;
+    src:url("font/GoogleSans-Italic.ttf");
+}
+@font-face{
+    font-family: helvetica2;
+    src:url("font/helvetica-light.ttf");
+}
+.box-menu{
+    margin:5vw;
+    background-color:#caf0f8;
+    border-radius:15px;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-left:10vw;
+    margin-right:10vw;
+    width:250vh;
+}
+.box-menuOrder{
+    font-family: helvetica;
+    margin:5vw;
+    background-color:#caf0f8;
+    border-radius:15px;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-left:10vw;
+    margin-right:10vw;
+    width:250vh;
+    height:90vh;
+}
+.content{
+    display:flex;
+    height:100vh;
+}
+.contentOrder{
+    display:flex;
+    height:120vh;
+}
+.text{
+    margin:5vw;
+    height: auto;
+}
+.box-menu h2{
+    font-family:helvetica;
+}
+h2{
+    margin:2vw;
+    margin-left:0vw;
+}
+td{
+    padding-top:1.5vw;
+    padding-right:3vw;
+    font-family:helvetica;
+    font-size:18.5px;
+}
+.input{
+    padding:0.7vw;
+    font-size:17px;
+    font-family: helvetica;
+    width:38.5vw;
+    border-radius:7px;
+    box-shadow: 0px 0px 2px 1px black;
+}
+.input1{
+    padding:0.7vw;
+    font-size:17px;
+    font-family: helvetica;
+    width:20vw;
+    border-radius:7px;
+    box-shadow: 0px 0px 2px 1px black;
+}
+.btnSubmit{
+    padding:0.7vw;
+    font-family: helvetica;
+    font-size:17px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top:3vw;
+    background-color:#FFFADD;
+    border:0;
+    font-weight:650;
+}
+.btnSubmit:hover{
+    padding:0.7vw;
+    font-family: helvetica;
+    font-size:17px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top:3vw;
+    background-color:#4682A9;
+    border:0;
+    color:white;
+    font-weight:650;
+}
+.btn{
+    text-align:center;
+}
+.link{
+    font-weight:600;
+    font-size:15px;
+    margin:1vw;
+    margin-right:0;
+    text-decoration: none;
+    background-color:#FFFADD;
+    height:50px;
+    color:black;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.link:hover{
+    text-decoration: none;
+    background-color:#4682A9;
+    color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.link a{
+}
