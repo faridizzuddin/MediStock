@@ -143,8 +143,8 @@ public final class ProcessStock_jsp extends org.apache.jasper.runtime.HttpJspBas
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.prQty}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");
           out.write("                                    <td><img src=\"data:image/jpeg;base64,");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.PrImageString}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\"></td>\n");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.prImageString}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\" class=\"gambar-display\"></td>\n");
           out.write("                                    <td>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listpr.prExpDate}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");

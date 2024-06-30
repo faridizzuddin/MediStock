@@ -29,7 +29,6 @@
             <div class="box-menu">
                 <div class="text">
                     <h2>Product Registration</h2>
-                    <a href="toAddImage">Add Image</a>
                     <form action="addProduct" method="post">
                         <table>
                             <tr>
@@ -61,6 +60,7 @@
                         </table>
                         <div class="btn">
                             <button type="submit" class="btnSubmit">Submit</button>
+                            <button class="btnSubmit"><a href="toAddImage" style="text-decoration: none;color:black;">Add Image</a></button>
                         </div>
                     </form>
                 </div>
