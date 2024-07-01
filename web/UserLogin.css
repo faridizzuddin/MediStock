@@ -1,0 +1,133 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background: url("image/medical.svg") no-repeat center fixed;
+  background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.sign-in{
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-box{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.login_page{
+  width: 400px;
+  background: #79BAEC;
+  color: #fff;
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  box-shadow: -3px -3px 3px #000,
+              3px 3px 5px rgba(94,104,121,0.288);
+}
+.login_page input, label{
+    margin: 10px 20px;
+}
+.login_page input::placeholder{
+  color: #000;
+}
+.login_page input[type="text"],input[type="password"]{
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+}
+.login_page input[type="submit"]{
+  text-align: center;
+  width: 90%;
+  height: 50px;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  border-radius: 15px;
+  background: #FF0000;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login_page span{
+ margin-left: 140px;
+}
+.login_page .fonts{
+  background: #FF0000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 150px;
+  }
+.login_page .fas{
+  color: #fff;
+  font-size: 50px;
+  padding-left: 27px;
+  padding-top: 20px;
+}
+.login_page a{
+  text-decoration: none;
+  color: #12A2F3;
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.btnSubmit{
+    font-size: 1.8vw;
+    background-color:#caf0f8;
+    margin:3vh;
+    margin-left:4.5vh;
+    width:6.5vw;
+    padding:1vw;
+    border-radius:15px;
+    box-shadow: 0px 0px 6px 1px black;
+    
+    border:1px solid black;
+}
+.btnSubmit:hover{
+    color:white;
+    background-color:#0077B6;
+    box-shadow: 0px 0px 10px 1px white;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Make the wrapper take up remaining space */
+}
+.register {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Optional: Add some margin to the top for spacing */
+}
+
+.register a {
+    color: white; /* Set the font color to white */
+    text-decoration: none; /* Optional: Remove the underline from the link */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+.register a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}

@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+}
+
+/* Body Styling */
+body {
+    background-color: #f7f7f7; /* Lighter gray background */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #2196f3; /* Blue color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Increase font size */
+    font-weight: 700; /* Bold font */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #2c3e50; /* Dark blue-gray color */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}
+
+nav a {
+    color: #ffcc00; /* Change option color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s; /* Add a transition effect */
+}
+
+nav a:hover {
+    color: #ff9900; /* Change hover color to a lighter shade */
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto; /* Add margin to center the dashboard */
+}
+
+.dashboard h1 {
+    margin-bottom: 20px;
+    font-size: 26px; /* Increase font size */
+    font-weight: 700; /* Bold font */
+}
+
+.dashboard a {
+    display: block;
+    background-color: #ffcc00; /* Change option color */
+    color: #333;
+    text-decoration: none;
+    padding: 15px 0; /* Increase padding */
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 18px; /* Increase font size */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect */
+}
+
+.dashboard a:hover {
+    background-color: #ff9900; /* Change hover background color */
+    color: #fff; /* Change hover text color */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2196f3; /* Blue color */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; /* Increase padding */
+    margin-top: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}

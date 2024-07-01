@@ -100,6 +100,14 @@
         <servlet-name>toEditImage</servlet-name>
         <servlet-class>toEditImage</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>viewSelectedStaffServlet</servlet-name>
+        <servlet-class>viewSelectedStaffServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>viewAllMedicationAdmin</servlet-name>
+        <servlet-class>viewAllMedicationAdmin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>viewMedication</servlet-name>
         <url-pattern>/viewMedication</url-pattern>
@@ -199,6 +207,14 @@
     <servlet-mapping>
         <servlet-name>toEditImage</servlet-name>
         <url-pattern>/toEditImage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewSelectedStaffServlet</servlet-name>
+        <url-pattern>/viewSelectedStaffServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewAllMedicationAdmin</servlet-name>
+        <url-pattern>/viewAllMedicationAdmin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

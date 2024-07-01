@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  
+  background: url("image/medical.svg") no-repeat center fixed;
+  background-repeat: no-repeat;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+  background-color: #3498db; /* Blue-green color */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #1F456E; /* Dark blue-gray color */
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1F456E; /* Aegean colour */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 1px black;
+
+}
+
+form button:hover {
+  background-color: #2c3e50; /* Dark blue-gray color */
+}
+
+/* Additional Options Styling */
+.additional-options {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.additional-options a {
+  color: #3498db; /* Blue-green color */
+  text-decoration: none;
+}
+
+.additional-options a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #3498db; /* Blue-green color */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc; /* Add a top border */
+}
