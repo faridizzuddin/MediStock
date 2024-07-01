@@ -31,6 +31,7 @@ public class viewSelectedStaffServlet extends HttpServlet {
         out.println("Old IC :"+icNo);
         out.println("New IC :"+newIc);
 
+        request.setAttribute("useric_number", users.getIc_number());
         request.setAttribute("user", users);
         request.getRequestDispatcher("viewStaffProfile.jsp").forward(request, response);
     }

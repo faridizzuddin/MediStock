@@ -24,7 +24,7 @@
     <main>
 
         <h2>Profile Details</h2>
-        <p><strong>IC Number:</strong><c:out value="${user.ic_number}"></p>
+        <p><strong>IC Number : </strong><c:out value="${useric_number}"></c:out></p>
 
             
     </main>
