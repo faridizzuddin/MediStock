@@ -48,6 +48,7 @@ public final class Homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <link rel=\"icon\" type=\"image/x-icon\" href=\"image/MediStock.svg\">\n");
       out.write("        <title>Homepage</title>\n");
       out.write("        <link rel='stylesheet' href='Homepage.css'>\n");
       out.write("    </head>\n");

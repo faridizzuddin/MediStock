@@ -15,7 +15,8 @@
             <h1>Welcome, Admin!</h1>
             <a href="registerStaff.jsp">Register Staff</a>
             <a href="Sales.jsp">View Sales</a>
-            <a href="viewAllMedicationAdmin">View Products</a>
+            <a href="Products.jsp">View Products</a>
+            <a href="viewReports.jsp">View Reports</a>
         </div>
     </main>
     <nav>

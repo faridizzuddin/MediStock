@@ -14,7 +14,7 @@
         
     </nav>
     <main>
-        <h2>Welcome to the MediStock</h2>
+        <h2>Welcome to the Bus Management System</h2>
     </main>
     <footer>
         <p>&copy; 2024 User Management System</p>

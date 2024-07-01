@@ -22,7 +22,7 @@
     </nav>
     <main>
         <%
-            String dbURL = "jdbc:mysql://localhost:3306/medistocknew";
+            String dbURL = "jdbc:mysql://localhost:3306/medistock";
             String dbUser = "root";
             String dbPass = "admin";
             
@@ -38,7 +38,7 @@
                     Class.forName("com.mysql.jdbc.Driver");
                     conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
-                    String updateQuery = "UPDATE registerStaff SET password = ? WHERE ic_number = ?";
+                    String updateQuery = "UPDATE registerstaff SET password = ? WHERE ic_number = ?";
                     ps = conn.prepareStatement(updateQuery);
                     ps.setString(1, newPassword);
                     ps.setString(2, currentICNumber);
@@ -63,6 +63,7 @@
         <form method="post" action="editStaffProfile.jsp">
             <label for="newPassword">New Password:</label>
             <input type="password" id="newPassword" name="newPassword" required>
+            <input type="hidden" name="ic_number" value="${ic_number}">
             <button type="submit" name="update">Update Password</button>
         </form>
         

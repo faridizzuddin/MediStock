@@ -100,7 +100,7 @@ public final class loginStaff_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        ");
 
             if ("post".equalsIgnoreCase(request.getMethod())) {
-                String dbURL = "jdbc:mysql://localhost:3306/medistocknew";
+                String dbURL = "jdbc:mysql://localhost:3306/mediStockNew";
                 String dbUser = "root";
                 String dbPass = "admin";
 
@@ -109,7 +109,7 @@ public final class loginStaff_jsp extends org.apache.jasper.runtime.HttpJspBase
                 ResultSet rs = null;
 
                 try {
-                    Class.forName("com.mysql.jdbc.Driver");
+                    Class.forName("com.mysql.cj.jdbc.Driver");
                     conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
                     String icNumber = request.getParameter("ic_number");
@@ -126,6 +126,7 @@ public final class loginStaff_jsp extends org.apache.jasper.runtime.HttpJspBase
                     if (rs.next()) {
                         request.setAttribute("ic", icNumber);
                         request.getRequestDispatcher("staffDashboard.jsp").forward(request, response);
+//                        response.sendRedirect("staffDashboard.jsp");
                     } else {
                         out.println("<p>Invalid username or password.</p>");
                     }

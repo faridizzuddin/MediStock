@@ -16,7 +16,9 @@
             <h1>Welcome, Staff!</h1>
             <a href="HomePage.jsp">Home page</a>
             <a href="ProductMenu.jsp">Product Menu</a>
-            <a href="viewSelectedStaffServlet?icNo=${ic}">Staff Profile</a>
+            <a href="Stock.jsp">Stock Menu</a>
+<!--            <a href="viewStaffProfile.jsp">Staff Profile</a>-->
+            <a href="viewSelectedStaffServlett?ic=${ic}">Staff Profile</a>
         </div>
     </main>
     <nav>

@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/x-icon" href="image/MediStock.svg">
         <title>Homepage</title>
         <link rel='stylesheet' href='Homepage.css'>
     </head>

@@ -108,6 +108,10 @@
         <servlet-name>viewAllMedicationAdmin</servlet-name>
         <servlet-class>viewAllMedicationAdmin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>viewSelectedStaffServlett</servlet-name>
+        <servlet-class>servlet.viewSelectedStaffServlett</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>viewMedication</servlet-name>
         <url-pattern>/viewMedication</url-pattern>
@@ -215,6 +219,10 @@
     <servlet-mapping>
         <servlet-name>viewAllMedicationAdmin</servlet-name>
         <url-pattern>/viewAllMedicationAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewSelectedStaffServlett</servlet-name>
+        <url-pattern>/viewSelectedStaffServlett</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
