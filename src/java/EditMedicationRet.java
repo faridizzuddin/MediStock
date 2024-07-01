@@ -24,6 +24,8 @@ public class EditMedicationRet extends HttpServlet {
         PrintWriter out = response.getWriter();
         String sid = request.getParameter("prId");
         int id = Integer.parseInt(sid);
+        
+        //int id = Integer.parseInt(request.getParameter("prId"));
 
         Medication medic = MedicationDB.getSelectedMedication(id);
         List<Supplier> list = MedicationDB.getAllSupplier();

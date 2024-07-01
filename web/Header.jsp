@@ -17,7 +17,7 @@
     <body>
         <div class="navbar">
             <div>
-                <p class="nav" id='title'>MediStock Manager</p>
+                <p class="nav" id='title'>MediStock</p>
             </div>
             <div class='logo'>
                 <i class='bx bx-user' id='user'></i>
