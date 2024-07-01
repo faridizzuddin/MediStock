@@ -38,7 +38,7 @@ public class editSupplierServlet extends HttpServlet {
         int status = MedicationDB.updateSupplier(e);
         if (status > 0) {
             out.println("<script type=\"text/javascript\">");
-            out.println("alert('Product successfully added');");
+            out.println("alert('Supplier successfully edited');");
             out.println("window.location.href='viewAllSupplier';");
             out.println("</script>");
         } else {

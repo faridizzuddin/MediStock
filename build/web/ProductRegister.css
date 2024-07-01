@@ -41,6 +41,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     width:250vh;
     height:83vh;
 }
+.box-menu1{
+    margin:2vw;
+    margin-bottom:2vw;
+    background-color:#caf0f8;
+    border-radius:15px;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-left:10vw;
+    margin-right:10vw;
+    width:250vh;
+    height:auto;
+}
 .box-menuOrder{
     font-family: helvetica;
     margin:5vw;
@@ -119,6 +130,10 @@ td{
 .btn{
     text-align:center;
 }
+.btn1{
+    text-align:center;
+    margin-bottom: 30px;
+}
 .link{
     font-weight:600;
     font-size:15px;
@@ -139,4 +154,10 @@ td{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .link a{
+}
+.gambar-display{
+    width:250px;
+    height:250px;
+    border-radius:10px;
+    object-fit: cover;
 }

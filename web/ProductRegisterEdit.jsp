@@ -55,6 +55,7 @@
                         </table>
                         <div class="btn">
                             <button type="submit" class="btnSubmit">Submit</button>
+                            <button class="btnSubmit"><a href="toEditImage?id=${prID}" style="text-decoration: none;color:black;">Edit Image</a></button>
                         </div>
                     </form>
                 </div>

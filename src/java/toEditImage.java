@@ -5,11 +5,6 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,40 +14,18 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Fareed Dinn
  */
-public class EditMedication extends HttpServlet {
+public class toEditImage extends HttpServlet {
+
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-
-        int id = Integer.parseInt(request.getParameter("prID"));
-        int supplierId = Integer.parseInt(request.getParameter("supplierId"));
-
-        String prName = request.getParameter("prName");
-        int prQty = Integer.parseInt(request.getParameter("quantity"));
-        String prExpDate = request.getParameter("expiredDate");
-
-        Medication e = MedicationDB.getSelectedMedication(id);
-        e.setSupplierID(supplierId);
-        e.setPrName(prName);
-        e.setPrQty(prQty);
-        e.setPrExpDate(prExpDate);
-
-        int status = MedicationDB.update(e);
-        if (status > 0) {
-            out.println("<script type=\"text/javascript\">");
-            out.println("alert('Product successfully edited');");
-            out.println("window.location.href='viewAllMedication';");
-            out.println("</script>");
-        } else {
-            out.println("<script type=\"text/javascript\">");
-            out.println("alert('Product not successfully edited....Please Try Again!!');");
-            out.println("</script>");
-        }
-
-        out.close();
-
+        
+        int id = Integer.parseInt(request.getParameter("id"));
+        Medication medic = MedicationDB.getASelectedMedication(id);
+        
+        request.setAttribute("medic", medic);
+        request.getRequestDispatcher("editImage.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

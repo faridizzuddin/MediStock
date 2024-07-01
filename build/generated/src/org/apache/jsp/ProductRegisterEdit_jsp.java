@@ -73,7 +73,7 @@ public final class ProductRegisterEdit_jsp extends org.apache.jasper.runtime.Htt
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "SideMenu.jsp", out, false);
       out.write("\n");
       out.write("            </div>\n");
-      out.write("            <div class=\"box-menu\">\n");
+      out.write("            <div class=\"box-menu1\">\n");
       out.write("                <div class=\"text\">\n");
       out.write("                    <h2>Product Registration</h2>\n");
       out.write("                    <form action=\"EditMedication\" method=\"post\">\n");
@@ -121,6 +121,9 @@ public final class ProductRegisterEdit_jsp extends org.apache.jasper.runtime.Htt
       out.write("                        </table>\n");
       out.write("                        <div class=\"btn\">\n");
       out.write("                            <button type=\"submit\" class=\"btnSubmit\">Submit</button>\n");
+      out.write("                            <button class=\"btnSubmit\"><a href=\"toEditImage?id=");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${prID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" style=\"text-decoration: none;color:black;margin-bottom:30px;\">Edit Image</a></button>\n");
       out.write("                        </div>\n");
       out.write("                    </form>\n");
       out.write("                </div>\n");

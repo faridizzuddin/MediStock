@@ -22,7 +22,7 @@
             </div>
             <div class="contentbox">
                 <div class="box-menu">
-                    <h2 class="tajuk">Product</h2>
+                    <h2 class="tajuk">Available Product</h2>
                     <div class="stockintf">
                         <table border="1">
                             <tr>
@@ -40,7 +40,12 @@
                                     <td>${listpr.prId}</td>
                                     <td>${listpr.prName}</td>
                                     <td>${listpr.prQty}</td>
-                                    <td><img src="data:image/jpeg;base64,${listpr.prImageString}" class="gambar-display"></td>
+                                    <c:if test="${empty listpr.prImage}">
+                                        <td><img src="image/imagePlaceholder.jpg" class="gambar-display"></td>
+                                        </c:if>
+                                        <c:if test="${not empty listpr.prImage}">
+                                        <td><img src="data:image/jpeg;base64,${listpr.prImageString}" class="gambar-display"></td>
+                                        </c:if>
                                     <td>${listpr.prExpDate}</td>
                                     <td><a href="EditMedicationRet?prId=${listpr.prId}" class="btnedit">Edit</a></td>
                                     <td><a href="deleteProduct?prId=${listpr.prId}" class="btndel">Delete</a></td>

@@ -49,7 +49,7 @@ public final class Stock_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Stock</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"Stock.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/Stock.css\">\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        ");

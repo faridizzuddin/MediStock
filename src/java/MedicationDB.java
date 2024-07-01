@@ -137,6 +137,28 @@ public class MedicationDB {
 
         return e;
     }
+    public static Medication getASelectedMedication(int id) {
+        Medication e = new Medication();
+
+        try {
+            Connection con = MedicationDB.getConnection();
+            PreparedStatement ps = con.prepareStatement("select * from product where prID=?");
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                e.setPrID(rs.getInt(1));
+                e.setPrName(rs.getString(2));
+                e.setPrQty(rs.getInt(3));
+                e.setPrExpDate(rs.getString(4));
+                e.setPrImage(rs.getBytes(5));
+            }
+            con.close();
+        } catch (Exception exp) {
+            exp.printStackTrace();
+        }
+
+        return e;
+    }
 
     public static Supplier getSelectedSupplier(int suppId) {
         Supplier e = new Supplier();
@@ -287,7 +309,7 @@ public class MedicationDB {
         int status = 0;
         try {
             Connection con = MedicationDB.getConnection();
-            PreparedStatement ps = con.prepareStatement("update supplier set supplierName=?,supplierPhNum=?,supplierEmail=?, supplierCompanyName=? storageLocation=?, where supplierID=?");
+            PreparedStatement ps = con.prepareStatement("update supplier set supplierName=?,supplierPhNum=?,supplierEmail=?, supplierCompanyName=?, storageLocation=? where supplierID=?");
             ps.setString(1, supplier.getSupplierName());
             ps.setString(2, supplier.getSupplierPhNum());
             ps.setString(3, supplier.getSupplierEmail());

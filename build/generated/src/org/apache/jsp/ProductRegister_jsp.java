@@ -82,7 +82,6 @@ public final class ProductRegister_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            <div class=\"box-menu\">\n");
       out.write("                <div class=\"text\">\n");
       out.write("                    <h2>Product Registration</h2>\n");
-      out.write("                    <a href=\"toAddImage\">Add Image</a>\n");
       out.write("                    <form action=\"addProduct\" method=\"post\">\n");
       out.write("                        <table>\n");
       out.write("                            <tr>\n");
@@ -115,6 +114,7 @@ public final class ProductRegister_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                        </table>\n");
       out.write("                        <div class=\"btn\">\n");
       out.write("                            <button type=\"submit\" class=\"btnSubmit\">Submit</button>\n");
+      out.write("                            <button class=\"btnSubmit\"><a href=\"toAddImage\" style=\"text-decoration: none;color:black;\">Add Image</a></button>\n");
       out.write("                        </div>\n");
       out.write("                    </form>\n");
       out.write("                </div>\n");
