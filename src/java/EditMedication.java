@@ -28,7 +28,6 @@ public class EditMedication extends HttpServlet {
 
         int id = Integer.parseInt(request.getParameter("prID"));
         int supplierId = Integer.parseInt(request.getParameter("supplierId"));
-
         String prName = request.getParameter("prName");
         int prQty = Integer.parseInt(request.getParameter("quantity"));
         String prExpDate = request.getParameter("expiredDate");
