@@ -20,7 +20,7 @@
                 <p class="nav" id='title'>MediStock</p>
             </div>
             <div class='logo'>
-                <i class='bx bx-user' id='user'></i>
+                <a href="viewSelectedStaffServlett?ic=${ic}"><i class='bx bx-user' id='user'></i></a>
             </div>
         </div>
     </body>

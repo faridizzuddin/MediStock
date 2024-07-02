@@ -20,12 +20,18 @@
             <div class='sideMenu' id="side1">
                 <a href="viewAllMedicationAdmin"><p class='tajuk'>Product</p></a>
             </div>
-<!--            <div class='sideMenu'>
-                <a href="Order.jsp"><p class='tajuk'>Order</p></a>
-            </div>-->
-<!--            <div class='sideMenu'>
-                <a href="Supplier.jsp"><p class='tajuk'>Supplier</p></a>
-            </div>-->
+            <div class='sideMenu'>
+                <a href="viewAllOrderrAdmin"><p class='tajuk'>Order</p></a>
+            </div>
+            <div class='sideMenu'>
+                <a href="viewAllSalesAdmin"><p class='tajuk'>Sales</p></a>
+            </div>
+            <!--            <div class='sideMenu'>
+                            <a href="Order.jsp"><p class='tajuk'>Order</p></a>
+                        </div>-->
+            <!--            <div class='sideMenu'>
+                            <a href="Supplier.jsp"><p class='tajuk'>Supplier</p></a>
+                        </div>-->
         </div>
     </body>
 </html>

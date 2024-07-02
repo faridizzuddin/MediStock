@@ -53,7 +53,7 @@
     </script>
 </head>
 <body>
-    <jsp:include page="Header.jsp"/>
+    <jsp:include page="HeaderAdmin.jsp"/>
     <header>
         <h1>Register Staff</h1>
     </header>

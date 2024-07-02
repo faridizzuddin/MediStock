@@ -28,7 +28,7 @@ public class deleteProduct extends HttpServlet {
         if (status > 0) {
             out.println("<script type=\"text/javascript\">");
             out.println("alert('Product successfully deleted');");
-            out.println("window.location.href='Stock.jsp';");
+            out.println("window.location.href='viewAllMedication';");
             out.println("</script>");
 
         } else {

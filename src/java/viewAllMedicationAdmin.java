@@ -33,7 +33,7 @@ public class viewAllMedicationAdmin extends HttpServlet {
 
         List<Medication> list = MedicationDB.getAllMedications();
         request.setAttribute("list", list);
-        request.getRequestDispatcher("ProcessStockAdmin.jsp").forward(request, response);
+        request.getRequestDispatcher("ProcessStock_1.jsp").forward(request, response);
 
         out.close();
     }

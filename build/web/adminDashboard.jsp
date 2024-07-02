@@ -14,13 +14,14 @@
         <div class="dashboard">
             <h1>Welcome, Admin!</h1>
             <a href="registerStaff.jsp">Register Staff</a>
-            <a href="Sales.jsp">View Sales</a>
             <a href="viewAllMedicationAdmin">View Products</a>
+            <a href="viewAllOrderrAdmin">View Products</a>
+            <a href="viewAllSalesAdmin">View Sales</a>
 <!--            <a href="viewReports.jsp">View Reports</a>-->
         </div>
     </main>
     <nav>
-        <a href="index.jsp">Logout</a> <!-- Logout button added -->
+        <a href="Homepage.jsp">Logout</a>
     </nav>
     <jsp:include page="Footer.jsp"/>
 </body>

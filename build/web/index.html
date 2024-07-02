@@ -5,12 +5,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/x-icon" href="image/MediStock.svg">
+        <title>Homepage</title>
+        <link rel='stylesheet' href='Homepage.css'>
     </head>
     <body>
-        <div>TODO write content</div>
-        <a href="viewMedication">view</a>
+        <jsp:include page="Header.jsp"/>
+        <div class="content" >
+            <div class="mainTajuk">
+                <p class="tajukBesar">
+                    Medi<strong>Stock</strong>
+                </p>
+                <p class="tajukKecil">
+                    Transforming your care
+                </p>
+                <p class="tajukKecil2">"Our family, Taking Care of <strong>Yours</strong>"</p>
+                <p class="tajukKecil1">Leave the headache of medical management<br><strong>earn to us</strong></p>
+                <p class="tajukKecil3">Start<strong> Here!!</strong></p>
+                <div class="btn">
+                    <a href="loginStaff.jsp"><p class="btnSubmit">Login</p></a>
+                </div>
+            </div>
+            <div class="sign-in">
+                <p></p>
+            </div>
+        </div>
     </body>
+    <jsp:include page="Footer.jsp"/>
 </html>

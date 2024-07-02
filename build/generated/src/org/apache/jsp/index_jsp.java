@@ -43,26 +43,24 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("    <title>Home</title>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"styledashboard.css\">\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("    <header>\n");
-      out.write("        <h1>Bus Management System</h1>\n");
-      out.write("    </header>\n");
-      out.write("    <nav>\n");
-      out.write("        <a href=\"adminLogin.jsp\">Login as Admin</a>\n");
-      out.write("        <a href=\"loginStaff.jsp\">Login as Staff</a>\n");
-      out.write("        \n");
-      out.write("    </nav>\n");
-      out.write("    <main>\n");
-      out.write("        <h2>Welcome to the MediStock</h2>\n");
-      out.write("    </main>\n");
-      out.write("    <footer>\n");
-      out.write("        <p>&copy; 2024 User Management System</p>\n");
-      out.write("    </footer>\n");
-      out.write("</body>\n");
+      out.write("    <head>\n");
+      out.write("        <title>Home</title>\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"styledashboard.css\">\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <header>\n");
+      out.write("            <h1>Medi<strong>Stock</strong></h1>\n");
+      out.write("        </header>\n");
+      out.write("        <nav>\n");
+      out.write("            <a href=\"adminLogin.jsp\">Login as Admin</a>\n");
+      out.write("            <a href=\"loginStaff.jsp\">Login as Staff</a>\n");
+      out.write("\n");
+      out.write("        </nav>\n");
+      out.write("\n");
+      out.write("        <footer>\n");
+      out.write("            <p>&copy; 2024 User Management System</p>\n");
+      out.write("        </footer>\n");
+      out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

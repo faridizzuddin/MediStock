@@ -3,7 +3,7 @@
     Created on : 27 May 2024, 12:23:50 pm
     Author     : Fareed Dinn
 --%>
-
+<%@ page session="true"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -21,6 +21,9 @@
     </head>
 
     <body>
+        <%
+            String ic = (String) session.getAttribute("ic");
+        %>
         <jsp:include page="Header.jsp"/>
         <div class="content">
             <div class="side">

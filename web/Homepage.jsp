@@ -27,7 +27,7 @@
                 <p class="tajukKecil1">Leave the headache of medical management<br><strong>earn to us</strong></p>
                 <p class="tajukKecil3">Start<strong> Here!!</strong></p>
                 <div class="btn">
-                    <a href="ProductMenu.jsp"><p class="btnSubmit">Login</p></a>
+                    <a href="loginStaff.jsp"><p class="btnSubmit">Login</p></a>
                 </div>
             </div>
             <div class="sign-in">

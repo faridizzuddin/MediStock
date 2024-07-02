@@ -49,102 +49,117 @@ public final class loginStaff_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("    <title>Staff Login</title>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"styleslogin.css\">\n");
-      out.write("    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n");
-      out.write("    <script>\n");
-      out.write("        function presetICNumber() {\n");
-      out.write("            var icInput = document.getElementById(\"ic_number\");\n");
-      out.write("            if (icInput.value.length === 6 || icInput.value.length === 9) {\n");
-      out.write("                icInput.value += '-';\n");
+      out.write("    <head>\n");
+      out.write("        <title>Staff Login</title>\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"styleslogin.css\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n");
+      out.write("        <script>\n");
+      out.write("            function presetICNumber() {\n");
+      out.write("                var icInput = document.getElementById(\"ic_number\");\n");
+      out.write("                if (icInput.value.length === 6 || icInput.value.length === 9) {\n");
+      out.write("                    icInput.value += '-';\n");
+      out.write("                }\n");
       out.write("            }\n");
-      out.write("        }\n");
-      out.write("         function togglePasswordVisibility() {\n");
-      out.write("            var password = document.getElementById(\"password\");\n");
-      out.write("            var eyeIcon = document.getElementById(\"password-eye\");\n");
-      out.write("            if (password.type === \"password\") {\n");
-      out.write("                password.type = \"text\";\n");
-      out.write("                eyeIcon.classList.remove(\"fa-eye\");\n");
-      out.write("                eyeIcon.classList.add(\"fa-eye-slash\");\n");
-      out.write("            } else {\n");
-      out.write("                password.type = \"password\";\n");
-      out.write("                eyeIcon.classList.remove(\"fa-eye-slash\");\n");
-      out.write("                eyeIcon.classList.add(\"fa-eye\");\n");
+      out.write("            function togglePasswordVisibility() {\n");
+      out.write("                var password = document.getElementById(\"password\");\n");
+      out.write("                var eyeIcon = document.getElementById(\"password-eye\");\n");
+      out.write("                if (password.type === \"password\") {\n");
+      out.write("                    password.type = \"text\";\n");
+      out.write("                    eyeIcon.classList.remove(\"fa-eye\");\n");
+      out.write("                    eyeIcon.classList.add(\"fa-eye-slash\");\n");
+      out.write("                } else {\n");
+      out.write("                    password.type = \"password\";\n");
+      out.write("                    eyeIcon.classList.remove(\"fa-eye-slash\");\n");
+      out.write("                    eyeIcon.classList.add(\"fa-eye\");\n");
+      out.write("                }\n");
       out.write("            }\n");
-      out.write("        }\n");
-      out.write("    </script>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("           ");
+      out.write("        </script>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
       out.write("\n");
-      out.write("    <header>\n");
-      out.write("        <h1>Staff Login</h1>\n");
-      out.write("    </header>\n");
-      out.write("    <nav>\n");
-      out.write("        <a href=\"adminLogin.jsp\">Login as Admin</a>\n");
-      out.write("        <a href=\"loginStaff.jsp\">Login as Staff</a>\n");
-      out.write("       \n");
-      out.write("    </nav>\n");
-      out.write("    <main>\n");
-      out.write("        <form action=\"loginStaff.jsp\" method=\"post\">\n");
-      out.write("            <label for=\"ic_number\">IC Number:</label>\n");
-      out.write("            <input type=\"text\" id=\"ic_number\" name=\"ic_number\" required oninput=\"presetICNumber()\" pattern=\"\\d{6}-\\d{2}-\\d{4}\" title=\"IC Number must be in the format 021122-11-0033\"><br>\n");
-      out.write("            <label for=\"password\">Password:</label>\n");
-      out.write("            <input type=\"password\" id=\"password\" name=\"password\" required><br>\n");
-      out.write("            <i id=\"password-eye\" class=\"fa fa-eye\" onclick=\"togglePasswordVisibility('password')\"></i><br>\n");
-      out.write("            \n");
-      out.write("            <button type=\"submit\">Login</button>\n");
-      out.write("        </form>\n");
-      out.write("        ");
-
-            if ("post".equalsIgnoreCase(request.getMethod())) {
-                String dbURL = "jdbc:mysql://localhost:3306/mediStockNew";
-                String dbUser = "root";
-                String dbPass = "admin";
-
-                Connection conn = null;
-                PreparedStatement ps = null;
-                ResultSet rs = null;
-
-                try {
-                    Class.forName("com.mysql.cj.jdbc.Driver");
-                    conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
-
-                    String icNumber = request.getParameter("ic_number");
-                    String password = request.getParameter("password");
-                    
-
-                    String query = "SELECT * FROM registerstaff WHERE ic_number = ? AND password = ?";
-                    ps = conn.prepareStatement(query);
-                    ps.setString(1, icNumber);
-                    ps.setString(2, password);
-            
-                    rs = ps.executeQuery();
-
-                    if (rs.next()) {
-                        request.setAttribute("ic", icNumber);
-                        request.getRequestDispatcher("staffDashboard.jsp").forward(request, response);
-//                        response.sendRedirect("staffDashboard.jsp");
-                    } else {
-                        out.println("<p>Invalid username or password.</p>");
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    if (rs != null) try { rs.close(); } catch (SQLException e) { e.printStackTrace(); }
-                    if (ps != null) try { ps.close(); } catch (SQLException e) { e.printStackTrace(); }
-                    if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
-                }
-            }
-        
+      out.write("        <header>\n");
+      out.write("            <h1>Staff Login</h1>\n");
+      out.write("        </header>\n");
+      out.write("        <nav>\n");
+      out.write("            <a href=\"adminLogin.jsp\">Login as Admin</a>\n");
+      out.write("            <a href=\"loginStaff.jsp\">Login as Staff</a>\n");
       out.write("\n");
-      out.write("    </main>\n");
-      out.write("           ");
+      out.write("        </nav>\n");
+      out.write("        <main>\n");
+      out.write("            <form action=\"loginStaff.jsp\" method=\"post\">\n");
+      out.write("                <label for=\"ic_number\">IC Number:</label>\n");
+      out.write("                <input type=\"text\" id=\"ic_number\" name=\"ic_number\" required oninput=\"presetICNumber()\" pattern=\"\\d{6}-\\d{2}-\\d{4}\" title=\"IC Number must be in the format 021122-11-0033\"><br>\n");
+      out.write("                <label for=\"password\">Password:</label>\n");
+      out.write("                <input type=\"password\" id=\"password\" name=\"password\" required><br>\n");
+      out.write("                <i id=\"password-eye\" class=\"fa fa-eye\" onclick=\"togglePasswordVisibility('password')\"></i><br>\n");
+      out.write("\n");
+      out.write("                <button type=\"submit\">Login</button>\n");
+      out.write("            </form>\n");
+      out.write("            ");
+
+                if ("post".equalsIgnoreCase(request.getMethod())) {
+                    String dbURL = "jdbc:mysql://localhost:3306/medistock";
+                    String dbUser = "root";
+                    String dbPass = "admin";
+
+                    Connection conn = null;
+                    PreparedStatement ps = null;
+                    ResultSet rs = null;
+
+                    try {
+                        Class.forName("com.mysql.cj.jdbc.Driver");
+                        conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+
+                        String icNumber = request.getParameter("ic_number");
+                        String password = request.getParameter("password");
+
+                        String query = "SELECT * FROM registerstaff WHERE ic_number = ? AND password = ?";
+                        ps = conn.prepareStatement(query);
+                        ps.setString(1, icNumber);
+                        ps.setString(2, password);
+
+                        rs = ps.executeQuery();
+
+                        if (rs.next()){
+
+                            session = request.getSession();
+                            session.setAttribute("ic", icNumber);
+                            
+                            request.setAttribute("ic", icNumber);
+                            request.getRequestDispatcher("staffDashboard.jsp").forward(request, response);
+    //                        response.sendRedirect("staffDashboard.jsp");
+                        } else {
+                            out.println("<p>Invalid username or password.</p>");
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                        if (rs != null) try {
+                            rs.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                        if (ps != null) try {
+                            ps.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                        if (conn != null) try {
+                            conn.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            
+      out.write("\n");
+      out.write("        </main>\n");
+      out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Footer.jsp", out, false);
       out.write("\n");
-      out.write("</body>\n");
+      out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

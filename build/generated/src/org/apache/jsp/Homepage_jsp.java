@@ -68,7 +68,7 @@ public final class Homepage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <p class=\"tajukKecil1\">Leave the headache of medical management<br><strong>earn to us</strong></p>\n");
       out.write("                <p class=\"tajukKecil3\">Start<strong> Here!!</strong></p>\n");
       out.write("                <div class=\"btn\">\n");
-      out.write("                    <a href=\"ProductMenu.jsp\"><p class=\"btnSubmit\">Login</p></a>\n");
+      out.write("                    <a href=\"loginStaff.jsp\"><p class=\"btnSubmit\">Login</p></a>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
       out.write("            <div class=\"sign-in\">\n");

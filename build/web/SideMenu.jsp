@@ -18,10 +18,10 @@
                 <a href="ProductMenu.jsp"><p class='tajuk'>Product</p></a>
             </div>
             <div class='sideMenu'>
-                <a href="Sales.jsp"><p class='tajuk'>Sales</p></a>
+                <a href="salesForms.jsp"><p class='tajuk'>Sales</p></a>
             </div>
             <div class='sideMenu'>
-                <a href="Order.jsp"><p class='tajuk'>Order</p></a>
+                <a href="orderForms.jsp"><p class='tajuk'>Order</p></a>
             </div>
             <div class='sideMenu'>
                 <a href="Supplier.jsp"><p class='tajuk'>Supplier</p></a>
